@@ -10,6 +10,7 @@
 	<string>#!/usr/bin/env ruby
 require ENV['TM_SUPPORT_PATH'] + "/lib/exit_codes"
 require "#{ENV['TM_SUPPORT_PATH']}/lib/escape"
+require "#{ENV['TM_SUPPORT_PATH']}/private/plist" # Hash#to_plist
 
 line = STDIN.read
 
